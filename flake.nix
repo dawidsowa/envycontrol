@@ -12,6 +12,8 @@
           pname = "envycontrol";
           version = "3.5.2";
           src = self;
+          pyproject = true;
+          build-system = [ setuptools ];
         };
         default = self.packages.${system}.envycontrol;
       };
